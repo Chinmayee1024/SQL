@@ -1,6 +1,57 @@
+
 CREATE DATABASE temp1;
 create database temp2 ;
 CREATE DATABASE College;
 
 DROP DATABASE temp1;
 DROP DATABASE temp2;
+
+USE College;
+
+CREATE TABLE student(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+age INT NOT NULL
+);
+INSERT INTO student VALUES(1,"ELI",22);
+INSERT INTO student VALUES(2,"PAMI",23);
+INSERT INTO student VALUES(3,"SUMI",28);
+INSERT INTO student VALUES(4,"LUSI",25);
+INSERT INTO student VALUES(5,"LARENS",23);
+
+SELECT * FROM student;
+
+CREATE DATABASE college;
+CREATE DATABASE IF NOT EXISTS college;
+
+DROP DATABASE company;
+ 
+SHOW DATABASES;
+SHOW TABLES;
+
+
+CREATE TABLE department(
+id INT PRIMARY KEY,
+name VARCHAR(50)
+);
+
+SELECT * FROM department;
+INSERT INTO department (id,name) VALUES
+(101,"ELI"),
+(102,"PAMI"),
+(103,"SUMI");
+INSERT INTO department VALUES(104,"TANIA");
+
+CREATE DATABASE jkctd;
+USE jkctd;
+CREATE TABLE employee(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+salary DOUBLE
+);
+
+INSERT INTO employee VALUES
+(1,"ELI",50000),
+(2,"PAMI",40000),
+(3,"SUMI",30000);
+SELECT * FROM employee;
