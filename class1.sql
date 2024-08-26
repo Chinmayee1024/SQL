@@ -55,3 +55,5 @@ INSERT INTO employee VALUES
 (2,"PAMI",40000),
 (3,"SUMI",30000);
 SELECT * FROM employee;
+INSERT INTO employee VALUES
+(4,"ELI",50000);
